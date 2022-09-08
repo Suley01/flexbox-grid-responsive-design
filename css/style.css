@@ -19,25 +19,43 @@ html {
 }
 
 body {
-  background-color: teal;
-/* Use a system font, if none are available use an available sans-sarif   font */
+  background-color: white;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  margin: 0;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+
+    
+  }
+  
+  .flex-container {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+  }
+  main{
+    text-align: center;
+  }
+  img{
+  border-radius: 50%;/*rounds image*/
+  border: 3px solid green
+  
 }
 
-img{
-  border-radius: 50%;/*rounds image*/
-  justify-content: center;
+#status{
+  text-align: right;
+  color: gray;
+  padding: 10px 10px;
+}
+
+h1{
+  
 }
 
 @media only screen and (min-width: 768px){
-  body{
-    grid-template-columns: 1fr 2fr;
-  }
-}
-.flex-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  main{
+    
+  
 }
