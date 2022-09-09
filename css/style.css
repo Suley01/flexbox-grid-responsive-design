@@ -92,15 +92,58 @@ p {
   background-color: lightgreen;
 }
 @media only screen and (min-width: 768px){
-  
+
   main {
     width: 400px;
+    display: grid; 
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto auto auto auto;
+    background-color: white;
+    text-align: left;
+    grid-template-areas: 
+    "status name" 
+    "occupation offer"
+    "brand contact"
+  
   }
   
+  #status{
+    text-align:left;
+  }
+
+  #occupation{
+    text-align: center;
+    background-color: gray;
+    
+  }
+
+  #name{
+    grid-column-start: 2 ;
+    grid-row: 1
+  } 
+#contact{
+  grid-column: 1 / span 1;
+  grid-row: 4;
+  
+}
+#offer {
+  grid-column: 2;
+  grid-row: 4;
+  padding: 5px;
+}
+#brand > p {
+  grid-row: 2;
+
+}
+
+img{
+  width: 50%;
+}
+
 }
   
-.flex-container {/* these contents makeup a flex box */
+/* .flex-container {/* these contents makeup a flex box
   display: flex; 
   align-items: center;
   justify-content: center;
-}
+}  */
